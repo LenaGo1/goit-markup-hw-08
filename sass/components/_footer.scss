@@ -1,0 +1,114 @@
+/* footer */
+
+.footer {
+  background: $footer-background-colour;
+}
+.footer .container {
+  padding: 60px 15px;
+  justify-content: space-between;
+  background-color: $footer-background-colour;
+}
+.footer-contacts,
+.social-networks {
+  width: calc((100% - 3 * 30px) / 4);
+}
+.social-networks .social-list {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer-contacts .logo,
+.appeal {
+  margin-bottom: 20px;
+  display: block;
+  color: var(--second-accent-color);
+}
+.contact {
+  display: block;
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.social-networks .social-item:not(:last-child) {
+  margin-right: 10px;
+  display: flex;
+}
+.contacts-margin {
+  align-content: space-between;
+}
+.social-links {
+  display: flex;
+}
+.footer .subscribe {
+  width: calc((100% - 30px) / 2);
+}
+.subscribe-area {
+  display: flex;
+  align-items: center;
+}
+.subscribe-field {
+  width: 360px;
+  height: 50px;
+  color: $footer-accent-text-colour;
+  background-color: transparent;
+  border: 1px solid $border-subscribe-field-colour;
+  border-radius: 4px;
+  padding-left: 16px;
+  margin-right: 12px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+.subscribe .button {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  width: 200px;
+  padding: 10px 29px;
+}
+.subscribe-form {
+  display: inline-block;
+}
+.subscribe-sending {
+  margin-right: 10px;
+}
+.footer {
+  .link {
+    color: $footer-accent-text-colour;
+    font-weight: 400;
+  }
+  .adress {
+    color: $second-accent-color;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .social-link {
+    background-color: $footer-social-background-colour;
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.appeal {
+  color: $second-accent-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.social-networks .social-link {
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.social-networks .social-icon {
+  fill: $second-accent-color;
+}

@@ -11,21 +11,60 @@
 .hidden-caption {
   display: none;
 }
+
 .section.features {
-  padding-bottom: 0;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
-.feature {
-  width: calc((100% - 30px * 3) / 4);
-  margin-right: 30px;
-  &:nth-child(4n) {
-    margin-right: 0;
+
+.features .list {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
   }
-  &--image {
-    background-color: $second-background-color;
-    padding-top: 25px;
-    padding-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
+}
+
+.feature-item {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(even) {
+      margin-right: 0px;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 3) / 4);
+    margin-right: 30px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
   &::before {
+    width: 100%;
     display: block;
     content: "";
     height: 120px;
@@ -36,16 +75,16 @@
   }
 }
 
-.feature.antenna::before {
+.feature-item.antenna::before {
   background-image: url("../images/antena.svg");
 }
-.feature.clock::before {
+.feature-item.clock::before {
   background-image: url("../images/clock.svg");
 }
-.feature.diagram::before {
+.feature-item.diagram::before {
   background-image: url("../images/diagram.svg");
 }
-.feature.astronaut::before {
+.feature-item.astronaut::before {
   background-image: url("../images/astronaut.svg");
 }
 .feature {

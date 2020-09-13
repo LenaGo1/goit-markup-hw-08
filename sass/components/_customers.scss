@@ -1,7 +1,9 @@
 /* Customers*/
-.container .customers {
+.container {
+  .customers {
   display: flex;
   flex-wrap: wrap;
+  }
 }
 
 .customer-item {

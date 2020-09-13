@@ -714,7 +714,21 @@ hr {
 }
 
 /* filter (buttons) */
+.section .filter {
+  padding-bottom: 0;
+}
+
+.filter .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .filter .button {
+  margin-bottom: 15px;
   color: #212121;
   background-color: #f5f4fa;
   font-weight: 500;
@@ -739,31 +753,14 @@ hr {
   display: none;
 }
 
-.filter .list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .filter-item:not(:last-child) {
   margin-right: 8px;
-}
-
-.section.filter {
-  padding-bottom: 0;
 }
 
 @media screen and (max-width: 1199px) {
   .filter .button {
     padding: 6px 22px;
   }
-}
-
-.filter .button {
-  margin-bottom: 15px;
 }
 
 .filter .list {
@@ -794,22 +791,8 @@ hr {
 }
 
 /* portfolio */
-@media screen and (max-width: 767px) {
-  .section.portfolio {
-    padding-top: 25px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .section.portfolio {
-    padding-top: 21px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section.portfolio {
-    padding-top: 35px;
-  }
+.section.portfolio {
+  padding-top: 0;
 }
 
 .portfolio-title {
@@ -906,6 +889,13 @@ hr {
 @media screen and (max-width: 767px) {
   .portfolio-item:not(:last-child) {
     margin-bottom: 30px;
+  }
+  .portfolio-item .text-overlay {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+  }
+  .portfolio-overlay {
+    padding: 15px 10px;
   }
 }
 

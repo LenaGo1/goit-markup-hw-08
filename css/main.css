@@ -719,6 +719,15 @@ hr {
   text-align: center;
 }
 
+.hero-title {
+  color: #ffffff;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 0 30px;
+}
+
 .overlay {
   height: 600px;
   margin-left: auto;
@@ -775,15 +784,6 @@ hr {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/desctop_background2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desctop_background2x.jpg");
   }
-}
-
-.hero-title {
-  color: #ffffff;
-  font-weight: 900;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin: 0 0 30px;
 }
 
 @media screen and (max-width: 1199px) {

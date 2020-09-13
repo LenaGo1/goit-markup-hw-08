@@ -1,17 +1,7 @@
 /* portfolio */
 
 .section.portfolio {
-  @media screen and (max-width: 767px) {
-    padding-top: 25px;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding-top: 21px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-top: 35px;
-  }
+  padding-top: 0;
 }
 
 .portfolio-title {
@@ -94,6 +84,13 @@
 @media screen and (max-width: 767px) {
   .portfolio-item:not(:last-child) {
     margin-bottom: 30px;
+  }
+  .portfolio-item .text-overlay {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+  }
+  .portfolio-overlay {
+    padding: 15px 10px;
   }
 }
 

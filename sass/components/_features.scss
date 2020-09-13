@@ -75,17 +75,19 @@
   }
 }
 
-.feature-item.antenna::before {
-  background-image: url("../images/antena.svg");
-}
-.feature-item.clock::before {
-  background-image: url("../images/clock.svg");
-}
-.feature-item.diagram::before {
-  background-image: url("../images/diagram.svg");
-}
-.feature-item.astronaut::before {
-  background-image: url("../images/astronaut.svg");
+.feature-item {
+  &.antenna::before {
+    background-image: url("../images/antena.svg");
+  }
+  &.clock::before {
+    background-image: url("../images/clock.svg");
+  }
+  &.diagram::before {
+    background-image: url("../images/diagram.svg");
+  }
+  &.astronaut::before {
+    background-image: url("../images/astronaut.svg");
+  }
 }
 .feature {
   &-title {

@@ -96,6 +96,7 @@
   .menu-container.is-open {
     display: block;
     text-align: center;
+    z-index: 1;
   }
   .site-nav .link,
   .contact-box .contacts {

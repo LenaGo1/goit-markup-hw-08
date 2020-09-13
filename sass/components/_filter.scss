@@ -31,3 +31,35 @@
 .filter-item:not(:last-child) {
   margin-right: 8px;
 }
+.section.filter {
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .filter .button {
+    padding: 6px 22px;
+  }
+}
+.filter .button {
+  margin-bottom: 15px;
+}
+
+.filter {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
+  }
+}
+
+.filter {
+  @media screen and (max-width: 767px) {
+    .list {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}

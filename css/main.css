@@ -327,7 +327,6 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  /* outline: 1px solid red; */
 }
 
 body {
@@ -598,7 +597,7 @@ hr {
 
 @media screen and (max-width: 767px) {
   .page-header .container {
-    padding: 10px 15px;
+    padding: 16px 15px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -611,7 +610,7 @@ hr {
     width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
-    height: 394px;
+    height: 415px;
     background-color: #fff;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -636,6 +635,12 @@ hr {
             align-items: center;
     margin-left: auto;
     margin-right: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navigation.site-nav {
+    margin-bottom: 70px;
   }
   .contacts {
     display: block;
@@ -645,7 +650,7 @@ hr {
   }
   .menu-item {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     position: relative;
   }
   .menu-item:last-child {
@@ -661,6 +666,13 @@ hr {
   .menu-container.is-open {
     display: block;
     text-align: center;
+  }
+  .site-nav .link,
+  .contact-box .contacts {
+    font-size: 18px;
+  }
+  .page-header .logo {
+    font-size: 24px;
   }
 }
 
@@ -720,8 +732,8 @@ hr {
   .overlay {
     max-width: 767px;
     height: 400px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile_background1x");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile_background1x");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile_background1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile_background1x.jpg");
   }
 }
 
@@ -736,8 +748,8 @@ hr {
   .overlay {
     max-width: 1199px;
     height: 400px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/tablet_background1x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/tablet_background1x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tablet_background1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet_background1x.jpg");
   }
 }
 
@@ -1398,9 +1410,11 @@ p .position {
     margin: 0 0 20px;
   }
   .footer-contacts,
-  .social-networks,
   .footer .subscribe {
     width: 100%;
+    text-align: center;
+  }
+  .social-networks {
     text-align: center;
   }
   .footer-contacts,
@@ -1556,14 +1570,21 @@ visually-hidden {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+    height: auto;
+  }
+}
+
 .backdrop.is-hidden .modal {
   opacity: 0;
 }
 
 .close-link {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 1.52%;
+  right: 1.52%;
   width: 30px;
   height: 30px;
   background-size: 11px;
@@ -1706,6 +1727,11 @@ visually-hidden {
 
 .textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .textarea .checkbox {

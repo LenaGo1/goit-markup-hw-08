@@ -30,7 +30,7 @@
 
 @media screen and (max-width: 767px) {
   .page-header .container {
-    padding: 10px 15px;
+    padding: 16px 15px;
     align-items: center;
   }
 
@@ -43,7 +43,7 @@
 
     padding-top: 60px;
     padding-bottom: 60px;
-    height: 394px;
+    height: 415px;
 
     background-color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
@@ -65,6 +65,10 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    justify-content: space-between;
+  }
+  .navigation.site-nav {
+    margin-bottom: 70px;
   }
   .contacts {
     display: block;
@@ -72,7 +76,7 @@
   }
   .menu-item {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     position: relative;
   }
 
@@ -92,6 +96,13 @@
   .menu-container.is-open {
     display: block;
     text-align: center;
+  }
+  .site-nav .link,
+  .contact-box .contacts {
+    font-size: 18px;
+  }
+  .page-header .logo {
+    font-size: 24px;
   }
 }
 
